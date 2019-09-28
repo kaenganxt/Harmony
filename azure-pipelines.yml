@@ -35,7 +35,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: 'd:/a/1/s/Harmony/bin/Release/'
-    Contents: '*.dll'
+    Contents: '**/*.dll'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
